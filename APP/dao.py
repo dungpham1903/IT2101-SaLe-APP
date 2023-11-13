@@ -6,6 +6,8 @@ def get_products(kw):
     if kw:
         products= products.filter(Product.name.contains(kw))
     return products.all()
+
+
     # products = [{
     #     "id" : 1,
     #     "name" : "Iphone 13",
